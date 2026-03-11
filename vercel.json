@@ -1,12 +1,12 @@
 {
-  "functions": {
-    "app.py": {  // <-- Mudei de "api/app.py" para "app.py"
-      "runtime": "python@3.12.12"
-    }
-  },
   "build": {
     "env": {
       "PYTHON_VERSION": "3.12.12"
+    }
+  },
+  "functions": {
+    "app.py": {
+      "runtime": "python@3.12"
     }
   }
 }
