@@ -4,25 +4,15 @@
       "PYTHON_VERSION": "3.12.12"
     }
   },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/app.py"
+  "functions": {
+    "app.py": {
+      "runtime": "python@3.12"
     }
-  ],
-  "headers": [
+  },
+  "routes": [
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
+      "src": "/(.*)",
+      "dest": "app.py"
     }
-  ],
-  "github": {
-    "enabled": true,
-    "silent": false
-  }
+  ]
 }
