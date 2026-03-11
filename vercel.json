@@ -5,8 +5,8 @@
     }
   },
   "functions": {
-    "api/app.py": {
-      "runtime": "python3.12"
+    "app.py": {
+      "runtime": "python@3.12"
     }
   },
   "rewrites": [
