@@ -1,14 +1,14 @@
 {
-  "builds": [
-    {
-      "src": "app.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
-      }
+  "build": {
+    "env": {
+      "PYTHON_VERSION": "3.9.18" // Tenta forçar uma versão específica do Python 3.9
     }
-  ],
+  },
+  "functions": {
+    "app.py": {
+      "runtime": "python3.9"
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
