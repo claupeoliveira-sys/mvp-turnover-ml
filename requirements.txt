@@ -1,5 +1,11 @@
-streamlit
+streamlit==1.33.0
 pandas==2.2.2
-numpy==2.0.2
+numpy==1.26.4 # Esta é a versão que o Streamlit instalou, não a 2.0.2 original
 scikit-learn==1.6.1
 joblib==1.5.3
+protobuf==4.25.8 # Esta é a versão que o Streamlit instalou, não a 5.29.6 original
+pillow==10.4.0
+packaging==24.2
+cachetools==5.5.2
+pydeck==0.9.1
+tenacity==8.5.0
