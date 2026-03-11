@@ -4,10 +4,15 @@
       "PYTHON_VERSION": "3.12.12"
     }
   },
-  "rewrites": [
+  "functions": {
+    "app.py": {
+      "runtime": "python@3.12"
+    }
+  },
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/app.py"
+      "src": "/(.*)",
+      "dest": "/app.py"
     }
   ]
 }
