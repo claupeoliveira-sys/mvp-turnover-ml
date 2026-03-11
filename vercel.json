@@ -3,5 +3,26 @@
     "env": {
       "PYTHON_VERSION": "3.12.12"
     }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/app.py"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "github": {
+    "enabled": true,
+    "silent": false
   }
 }
