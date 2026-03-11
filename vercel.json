@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/app.py": {
+    "app.py": {  // <-- Mudei de "api/app.py" para "app.py"
       "runtime": "python@3.12.12"
     }
   },
